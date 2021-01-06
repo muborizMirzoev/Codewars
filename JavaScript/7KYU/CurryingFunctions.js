@@ -8,12 +8,5 @@
 // You must not mutate the original array.
 
 // Here's a nice Youtube video about currying, which might help you if this is new to you.
-function multiplyAll (arr) {
-  let array = [];
-  return function(n) {
-    for(let i = 0; i < arr.length; i++) {
-      array.push(arr[i] * n);
-    }
-    return array;
-  }
-}
+
+const multiplyAll = (arr) => (num) => arr.map((item) => item * num);
