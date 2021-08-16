@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+
 const findDisappearedNumbers = function (nums) {
   const result = [];
   const uniqueNums = new Set(nums);
